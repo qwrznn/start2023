@@ -17,12 +17,14 @@ $end = <<<EOD
 </html>
 EOD;
 
-$x = rand(360, 410)/10;
-if ($x < 377 /10) {
-    echo "<p style=\"color:blue;\">$x - Здоров!</p>";
-} elseif ($x > 377/10) {
-    echo "<p style=\"color:red;\">$x- Хворий!</p>";
-} else {
-    echo "<p style=\"color:yellow;\">$x - Щось нездужає....</p>";
-}
+$x = rand(350, 420)/10;
+// if ($x < 37) {
+//     echo "<p style=\"color:blue;\">$x - Здоров!</p>";
+// } elseif ($x > 37) {
+//     echo "<p style=\"color:red;\">$x- Хворий!</p>";
+// } else {
+//     echo "<p style=\"color:yellow;\">$x - Щось нездужає....</p>";
+// }
+$str = ($x < 37) ?  "<p style='color:blue;'>".$x ." - Здоров!</p>" :  (($x > 37) ?  "<p style='color:red;'>".$x." - Хворий!</p>" :  "<p style='color:yellow;'>".$x." - Щось нездужає...</p>");
+echo $str;
 echo $end;
