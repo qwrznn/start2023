@@ -17,7 +17,7 @@ $end = <<<EOD
 </html>
 EOD;
 
-$x = rand(-300, 500); //-10.5;
+$x = rand(-30, 50); //-10.5;
 $x = (int) $x;
 if ($x < 0) {
     echo "<p style=\"color:blue;\">$x - Мороз!</p>";
